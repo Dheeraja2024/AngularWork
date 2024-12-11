@@ -1,0 +1,20 @@
+          <h1>ALL STUDENT DETAILS</h1>
+          <button routerLink="/insertdb/">INSERT DETAILS</button>
+          <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>NAME</th>
+                        <th>AGE</th>
+                        <th>MARK</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let p of Getdata">
+                        <td>{{p.Name}}</td>
+                        <td>{{p.Age}}</td>
+                        <td>{{p.Mark}}</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
